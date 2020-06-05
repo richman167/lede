@@ -61,7 +61,6 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
-          git clone https://github.com/Ameykyl/luci-app-koolproxyR.git
           git clone https://github.com/rosywrt/luci-theme-rosy.git
       
       - name: Update feeds
@@ -174,7 +173,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-ramfree=y
           CONFIG_PACKAGE_v2ray-plugin=y
-          CONFIG_PACKAGE_luci-app-koolproxyR=y
           CONFIG_PACKAGE_luci-theme-rosy=y
           CONFIG_PACKAGE_luci-theme-atmaterial=y
           EOF
