@@ -10,9 +10,9 @@
 name: XiaoMiWiFi
 
 on:
-  push:
-    branches: 
-      - master
+#  push:
+#    branches: 
+#      - master
   # schedule:
   #   - cron: 0 20 * * *
   # release:
@@ -55,6 +55,12 @@ jobs:
 
           df -h
 
+      - name: 自定义插件主题。
+        run: |
+          cd package
+          mkdir openwrt-packages
+          cd openwrt-packages
+      
       - name: Update feeds
         run: |
           ./scripts/feeds update -a
