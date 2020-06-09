@@ -61,7 +61,6 @@ jobs:
          mkdir openwrt-packages
          cd openwrt-packages
          git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
-         git clone https://github.com/Ameykyl/luci-app-koolproxyR
          git clone https://github.com/rosywrt/luci-theme-rosy
          git clone https://github.com/maxlicheng/luci-app-ssr-plus.git
 
@@ -175,6 +174,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_v2ray-plugin=y
           CONFIG_PACKAGE_simple-obfs=y
+          CONFIG_PACKAGE_luci-app-ssr-plus=y
           EOF
 
           # LuCI主题:
